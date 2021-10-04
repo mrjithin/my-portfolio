@@ -10,9 +10,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #1d3557;
-  /* border: 10px solid #07004d;*/
   width: 100vw;
-  /*  border-bottom-color: #457b9d;*/
   flex-direction: column;
 }
 
@@ -25,7 +23,6 @@ h1 {
 
 ul {
   list-style: none;
-  /*margin: 2em 0;*/
   display: flex;
   width: 75vw;
   justify-content: space-around;

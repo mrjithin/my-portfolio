@@ -49,6 +49,5 @@ li {
 }
 
 li:hover, li:active {
-  transform: translateY(0.3em);
-  box-shadow: 0 0.3em 15px;
+  transform: scale(1.15);
 }

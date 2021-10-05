@@ -51,3 +51,12 @@ li {
 li:hover, li:active {
   transform: scale(1.15);
 }
+
+#name {
+  color: #1df0d7;
+}
+
+#hi {
+  transform: scale(0.5);
+  color: #ff9359;
+}

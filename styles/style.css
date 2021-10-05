@@ -9,13 +9,12 @@ header {
   height: 95vh;
   justify-content: center;
   align-items: center;
-  background-color: #1d3557;
   width: 100vw;
   flex-direction: column;
 }
 
 h1 {
-  color: #e9c46a;
+  color: #d0d9d7;
   font-size: 10vw;
   padding: 0 1em;
   align-self: flex-start;
@@ -58,5 +57,10 @@ li:hover, li:active {
 
 #hi {
   transform: scale(0.5);
-  color: #ff9359;
+  color: #97a6a3;
+}
+
+passion {
+  transform: scale(0.8);
+  color: #f7f7f7;
 }

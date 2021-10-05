@@ -27,7 +27,7 @@ ul:nth-of-type(1) {
   padding: 1.5em 0;
   font-size: 100%;
   border-bottom: 0.2em solid #056dff;
-  
+  flex: 1;
 }
 
 a {

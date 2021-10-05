@@ -43,3 +43,12 @@ a {
 nav {
   flex: 1;
 }
+
+li {
+  transition: all 0.3s;
+}
+
+li:hover, li:active {
+  transform: translateY(0.3em);
+  box-shadow: 0 0.3em 15px;
+}

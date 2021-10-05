@@ -23,11 +23,12 @@ h1 {
 ul {
   list-style: none;
   display: flex;
-  width: 75vw;
+  height: 2em;
   justify-content: space-around;
   padding: 1.5em 0;
   font-size: 100%;
   border-bottom: 0.2em solid #056dff;
+  
 }
 
 a {
@@ -41,6 +42,8 @@ a {
 
 nav {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
@@ -63,4 +66,13 @@ li:hover, li:active {
 #passion {
   transform: scale(0.8);
   color: #d7ffd1;
+}
+
+#logo {
+  max-height: 8vmax;
+}
+
+#logo-a {
+  display: block;
+  padding: 1vh;
 }

@@ -73,6 +73,9 @@ li:hover, li:active {
 }
 
 #logo-a {
-  display: block;
-  padding: 1vh;
+  display: flex;
+  padding: 1vmax;
+  flex: 0.8;
+  align-items: center;
+  max-height: 10vmax;
 }

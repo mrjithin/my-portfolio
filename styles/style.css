@@ -67,6 +67,9 @@ li:hover, li:active {
 
 #passion {
   transform: scale(0.8);
+  display: block;
+  /* To scale down from the bottom-left so that it doesn't move away */
+  transform-origin: left bottom;
   color: #d7ffd1;
 }
 

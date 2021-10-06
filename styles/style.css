@@ -83,7 +83,8 @@ li:hover, li:active {
   padding: 1vmax;
   flex: 0.8;
   align-items: center;
-  max-height: 10vmax;
+ /* max-height: 10vmax;*/
+  align-self: stretch;
 }
 
 @media (max-width: 620px) {

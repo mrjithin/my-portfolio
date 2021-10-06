@@ -37,7 +37,7 @@ nav ul {
   height: 1.5em;
   justify-content: space-around;
   align-items: center;
-  /*padding: 1.5em 0;*/
+  padding: 1em 0;
   font-size: 150%;
   border-bottom: 0.2em solid #056dff;
   flex: 1;

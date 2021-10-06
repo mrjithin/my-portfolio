@@ -83,6 +83,7 @@ li:hover, li:active {
   padding: 1vmax;
   flex: 0.8;
   align-items: center;
+  height: 2.25rem;
  /* height: 2.25em; *//*1.5*1.5 from ul */
  /* max-height: 10vmax;*/
 }

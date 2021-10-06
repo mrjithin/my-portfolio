@@ -34,7 +34,7 @@ a {
   text-decoration: none;
   color: #2ec4b6;
 }
-
+/* For centering the h1 and top-aligning the nav*/
 .empty {
   flex: 1;
 }
@@ -60,7 +60,8 @@ li:hover, li:active {
 #hi {
   transform: scale(0.7);
   display: block;
-  transform-origin: right bottom;
+  /* To scale down from the bottom-left so that it doesn't move away */
+  transform-origin: left bottom;
   color: #97a6a3;
 }
 

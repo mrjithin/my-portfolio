@@ -3,13 +3,14 @@ font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Gluten', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Playfair Display', serif;
+font-family: 'Gemunu Libre', sans-serif;
 */
 
 body {
   margin: 0;
   box-sizing: border-box;
   background-color: #15263d;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gemunu Libre', sans-serif; ;
 }
 
 header {

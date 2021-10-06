@@ -16,6 +16,7 @@
     width: 100%;
     display: block;
     height: calc(100% / 8);
+    border-radius: 15px;
   }
 
   nav ul {

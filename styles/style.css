@@ -15,7 +15,7 @@ header {
 h1 {
   color: #d0d9d7;
   font-size: 10vmin;
-  padding: 0 1em;
+  padding: 0 0.5em;
   align-self: flex-start;
 }
 

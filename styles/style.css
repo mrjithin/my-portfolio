@@ -30,7 +30,7 @@ nav ul {
   border-bottom: 0.2em solid #056dff;
   flex: 1;
   background-color: green;
-  margin-block-start: 0;
+ /* margin-block-start: 0;*/
 }
 
 a {

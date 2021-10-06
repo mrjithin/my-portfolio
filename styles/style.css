@@ -59,7 +59,7 @@ li:hover, li:active {
 }
 
 #hi {
-  transform: scale(0.7);
+  transform: scale(0.6);
   display: block;
   /* To scale down from the bottom-left so that it doesn't move away */
   transform-origin: left bottom;
@@ -67,7 +67,7 @@ li:hover, li:active {
 }
 
 #passion {
-  transform: scale(0.8);
+  transform: scale(0.6);
   display: block;
   /* To scale down from the bottom-left so that it doesn't move away */
   transform-origin: left top;

@@ -6,10 +6,15 @@ font-family: 'Playfair Display', serif;
 font-family: 'Gemunu Libre', sans-serif;
 */
 
+:root {
+  --background-main: #15263d;
+  --icon-color: #056dff;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: #15263d;
+  background-color: var(--background-main);
   font-family: 'Gemunu Libre', sans-serif; ;
 }
 
@@ -39,7 +44,7 @@ nav ul {
   align-items: center;
   padding: 1em 0;
   font-size: 150%;
-  border-bottom: 0.2em solid #056dff;
+  border-bottom: 0.2em solid var(--icon-color);
   flex: 1;
 }
 

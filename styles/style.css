@@ -23,9 +23,9 @@ h1 {
 nav ul {
   list-style: none;
   display: flex;
- /* height: 1.5em;*/
+  height: 1.5em;
   justify-content: space-around;
-  padding: 1.5em 0;
+  padding: 0.5em 0;
   font-size: 150%;
   border-bottom: 0.2em solid #056dff;
   flex: 1;

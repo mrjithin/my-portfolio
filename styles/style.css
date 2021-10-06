@@ -60,7 +60,8 @@ li:hover, li:active {
 }
 
 #hi {
-  transform: scale(0.6);
+  transform: scale(0.8);
+  /*Inline elements doesn't transform*/
   display: block;
   /* To scale down from the bottom-left so that it doesn't move away */
   transform-origin: left bottom;

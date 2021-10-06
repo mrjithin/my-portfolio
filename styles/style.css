@@ -76,16 +76,15 @@ li:hover, li:active {
 
 #logo {
   max-height: 8vmax;
-  margin: 0 auto;
 }
 
 #logo-a {
-  display: table-cell;
+  display: flex;
   padding: 1vmax;
   flex: 0.8;
- /* align-items: center;*/
+  align-items: center;
  /* height: 2.25em; *//*1.5*1.5 from ul */
- /* max-height: 10vmax;*/
+  max-height: 10vmax;
 }
 
 @media (max-width: 620px) {

@@ -69,9 +69,8 @@ li:hover, li:active {
   transform: scale(0.8);
   display: block;
   /* To scale down from the bottom-left so that it doesn't move away */
-  transform-origin: left bottom;
+  transform-origin: left top;
   color: #d7ffd1;
-  margin-top: 0;
 }
 
 #logo {

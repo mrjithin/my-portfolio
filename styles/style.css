@@ -85,3 +85,7 @@ li:hover, li:active {
   align-items: center;
   max-height: 10vmax;
 }
+
+@media (max-width: 620px) {
+  
+}

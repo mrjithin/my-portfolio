@@ -2,8 +2,8 @@ document.addEventListener("contextmenu",kpg_nrci_cm, false);
       /*
 	if (nrci_opts['drag']=='Y') {
 		document.addEventListener("dragstart",kpg_nrci_cm, false);
-		document.addEventListener("touchmove",kpg_nrci_cm, false); /* same as drag? */
-	}
+		document.addEventListener("touchmove",kpg_nrci_cm, false); *//* same as drag? */
+     /* }
 	if (nrci_opts['touch']=='Y') {
 		document.addEventListener("touchstart",kpg_nrci_cm, false);
 	}

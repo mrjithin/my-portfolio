@@ -1,5 +1,5 @@
 document.addEventListener("contextmenu",kpg_nrci_cm, false);
-	
+      /*
 	if (nrci_opts['drag']=='Y') {
 		document.addEventListener("dragstart",kpg_nrci_cm, false);
 		document.addEventListener("touchmove",kpg_nrci_cm, false); /* same as drag? */
@@ -10,7 +10,7 @@ document.addEventListener("contextmenu",kpg_nrci_cm, false);
 	if (nrci_opts['gesture']=='Y') {
 		document.addEventListener("gesturestart",kpg_nrci_cm, false);
 	}
-
+      */
 
 function kpg_nrci_block(event) {
 	event.cancelBubble = true;

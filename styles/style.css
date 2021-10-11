@@ -99,15 +99,16 @@ li:hover, li:active {
 }
 
 #logo {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 90px;
+  margin-left: 10px;
 }
 
 #logo-a {
   display: flex;
   flex: 0.8;
   align-items: center;
-  height: 120px;
+  height: 95px;
 }
 
 h2,h3,h4,h5,h6 {

@@ -53,6 +53,11 @@ a[href^="#"] {
   text-decoration: none;
   color: #2ec4b6;
 }
+
+a {
+  text-decoration: none;
+}
+
 /* For centering the h1 and top-aligning the nav*/
 .empty {
   flex: 1;

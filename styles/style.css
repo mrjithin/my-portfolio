@@ -65,7 +65,7 @@ nav {
   display: flex;
   top: 0;
   width: 100vw;
-  background-color: var(--background-main);
+  background-color: #231380;
 }
 
 li {

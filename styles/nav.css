@@ -1,7 +1,12 @@
 @media (max-width: 820px) {
+  #ham-cont {
+    position: fixed;
+    display: flex;
+    align-items: center;
+  }
+
   .ham {
     display: flex;
-    position: fixed;
     right: 20px;
     top: 20px;
     width: 14vmin;

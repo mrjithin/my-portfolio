@@ -126,3 +126,7 @@ section {
   margin: 5vmax 10vmin;
   color: var(--text);
 }
+
+hr {
+  background-color: var(--text);
+}

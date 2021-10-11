@@ -98,16 +98,15 @@ li:hover, li:active {
   color: #d7ffd1;
 }
 
-/*#logo {
-  max-height: 8vmax;
-}*/
+#logo {
+  height: 100px;
+}
 
 #logo-a {
   display: flex;
   padding: 1vmax;
   flex: 0.8;
   align-items: center;
-  /*min-height: 10vmax;*/
 }
 
 h2,h3,h4,h5,h6 {

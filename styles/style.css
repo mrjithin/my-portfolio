@@ -49,7 +49,7 @@ nav ul {
   flex: 1;
 }
 
-a.internal {
+a[href^="#"] {
   text-decoration: none;
   color: #2ec4b6;
 }

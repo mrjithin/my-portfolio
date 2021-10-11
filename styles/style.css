@@ -59,12 +59,9 @@ a {
 }
 
 /* For centering the h1 and top-aligning the nav*/
-.empty {
-  flex: 1;
-}
 
 nav {
-  flex: 1;
+  position: fixed;
   display: flex;
 }
 

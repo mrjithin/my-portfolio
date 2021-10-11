@@ -1,7 +1,7 @@
 // To make both elements same height. 
-const navUl = document.querySelector('nav ul');
+//const navUl = document.querySelector('nav ul');
 const navA = document.getElementById('logo-a');
-navA.style.height = navUl.offsetHeight+'px';
+//navA.style.height = navUl.offsetHeight+'px';
 
 // Making both same height. 
 const hamCont = document.getElementById('ham-cont');

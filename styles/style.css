@@ -10,6 +10,7 @@ font-family: 'Gemunu Libre', sans-serif;
   --background-main: #15263d;
   --icon-color: #056dff;
   background-image: linear-gradient(to right bottom, #231380, #1e116f, #190f5f, #150c4f, #110940);
+  --text: #a9b1cc;
 }
 
 body {
@@ -118,8 +119,10 @@ h2,h3,h4,h5,h6 {
 
 h2 {
   font-size: 8vmin;
+  color: #18856b;
 }
 
 section {
   margin: 5vmax 10vmin;
+  color: var(--text);
 }

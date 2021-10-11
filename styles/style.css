@@ -100,13 +100,14 @@ li:hover, li:active {
 
 #logo {
   height: 100px;
+  width: 100px;
 }
 
 #logo-a {
   display: flex;
-  padding: 1vmax;
   flex: 0.8;
   align-items: center;
+  height: 120px;
 }
 
 h2,h3,h4,h5,h6 {

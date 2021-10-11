@@ -49,7 +49,7 @@ nav ul {
   flex: 1;
 }
 
-a {
+a.internal {
   text-decoration: none;
   color: #2ec4b6;
 }

@@ -3,12 +3,12 @@
     position: fixed;
     display: flex;
     align-items: center;
+    top: 0;
+    right: 20px;
   }
 
   .ham {
     display: flex;
-    right: 20px;
-    top: 20px;
     width: 14vmin;
     height: 12vmin;
     background-color: rgba(255, 255, 255, 0);

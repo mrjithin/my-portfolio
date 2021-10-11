@@ -9,12 +9,13 @@ font-family: 'Gemunu Libre', sans-serif;
 :root {
   --background-main: #15263d;
   --icon-color: #056dff;
+  background-image: linear-gradient(to right bottom, #231380, #1e116f, #190f5f, #150c4f, #110940);
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right bottom, #15263d, #20405b, #2a5c79, #337a97, #3e99b3);
+/*background-image: linear-gradient(to right bottom, #15263d, #20405b, #2a5c79, #337a97, #3e99b3);*/
   font-family: 'Gemunu Libre', sans-serif; ;
 }
 

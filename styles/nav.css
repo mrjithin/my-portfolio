@@ -16,9 +16,22 @@
     width: 100%;
     height: calc(100% / 8);
     border-radius: 15px;
+    transition: all 0.5s ease-in-out;
   }
 
   nav ul {
     display:none;
+  }
+
+  .none {
+    opacity: 0;
+  }
+
+  .cross #line1 {
+    transform: translateY(6vmin) rotate(45deg);
+  }
+
+  .cross #line3 {
+    transform: translateY(-4.5vmin) rotate(-45deg);
   }
 }

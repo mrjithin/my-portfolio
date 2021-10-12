@@ -37,6 +37,6 @@
   }
 
   .cross #line3 {
-    transform: translateY(-28.5px) rotate(-135deg);
+    transform: translateY(-29px) rotate(-135deg);
   }
 }

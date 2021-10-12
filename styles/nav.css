@@ -1,8 +1,8 @@
 @media (max-width: 820px) {
   .ham {
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 20px; 
+    top: 20px; /* (95 - 55) / 2 */
     display: flex;
     width: 55px;
     height: 55px;
@@ -28,10 +28,12 @@
   }
 
   .cross #line1 {
+    /* (55 - (2 * .line's height)) / 2 */
     transform: translateY(19.5px) rotate(135deg);
   }
 
   .cross #line3 {
+    /* ((55 - (2 * .line's height)) / 2 )+ .line's height */
     transform: translateY(-27.5px) rotate(-135deg);
   }
 }

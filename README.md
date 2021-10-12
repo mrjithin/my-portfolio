@@ -24,6 +24,6 @@ Everyone is free to fork this repo, *but* if you use any part of the code in you
 
 ## Contributions 
 All contributions are welcome *but* I will only merge it if I find it fitting to my taste. 
-<hr>
+<hr />
  
 ## 🔴 Currently WORK IN PROGRESS;

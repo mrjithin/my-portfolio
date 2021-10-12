@@ -9,8 +9,8 @@
 
   .ham {
     display: flex;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color: rgba(255, 255, 255, 0);
     flex-direction: column;
     justify-content: space-between;
@@ -37,6 +37,6 @@
   }
 
   .cross #line3 {
-    transform: translateY(-4.5vmin) rotate(-135deg);
+    transform: translateY(-6vmin) rotate(-135deg);
   }
 }

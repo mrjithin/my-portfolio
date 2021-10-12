@@ -9,7 +9,8 @@ font-family: 'Gemunu Libre', sans-serif;
 :root {
   --background-main: #15263d;
   --icon-color: #056dff;
-  background-image: linear-gradient(to right bottom, #231380, #1e116f, #190f5f, #150c4f, #110940);
+  /*background-image: linear-gradient(to right bottom, #231380, #1e116f, #190f5f, #150c4f, #110940);*/
+  background-color: #0e5080;
   --text: #a9b1cc;
 }
 
@@ -67,7 +68,8 @@ nav {
   display: flex;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(to right bottom, #23138099, #1e116f99, #190f5f99, #150c4f99, #11094099);
+  /*background-image: linear-gradient(to right bottom, #23138099, #1e116f99, #190f5f99, #150c4f99, #11094099);*/
+  background-color: #0e508099;
   z-index: 2;
 }
 

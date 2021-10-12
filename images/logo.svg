@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 236.607 121.38 Q 244.818 116.446 253.029 121.38 L 353.912 182.003 Q 362.124 186.937 362.124 196.806 L 362.124 318.05 Q 362.124 327.919 353.912 332.853 L 253.029 393.476 Q 244.818 398.41 236.607 393.476 L 135.724 332.853 Q 127.512 327.919 127.512 318.05 L 127.512 196.806 Q 127.512 186.937 135.724 182.003 Z" style="fill: rgb(31, 184, 192); fill-rule: evenodd; paint-order: stroke markers;" bx:shape="n-gon 244.818 257.428 135.453 140.982 6 0.07 1@2dbfc627"/>
+  <text style="fill: rgb(8, 69, 182); font-family: Arial, sans-serif; font-size: 53.2px; font-weight: 700; text-transform: capitalize; white-space: pre;" x="230.304" y="274.706" transform="matrix(3.541896, 0, 0, 2.92093, -629.620014, -492.114303)">J</text>
+</svg>

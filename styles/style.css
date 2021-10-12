@@ -67,7 +67,7 @@ nav {
   display: flex;
   top: 0;
   width: 100%;
-  background-color: rgba(23,13,80,0.7);
+  background-image: linear-gradient(to right bottom, #23138050, #1e116f50, #190f5f50, #150c4f50, #11094050);
   z-index: 2;
 }
 

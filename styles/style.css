@@ -6,6 +6,14 @@ font-family: 'Playfair Display', serif;
 font-family: 'Gemunu Libre', sans-serif;
 */
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 :root {
   --background-main: #15263d;
   --icon-color: #056dff;
@@ -16,7 +24,6 @@ font-family: 'Gemunu Libre', sans-serif;
 
 body {
   margin: 0;
-  box-sizing: border-box;
 /*background-image: linear-gradient(to right bottom, #15263d, #20405b, #2a5c79, #337a97, #3e99b3);*/
   font-family: 'Gemunu Libre', sans-serif; ;
 }

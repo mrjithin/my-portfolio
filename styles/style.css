@@ -71,6 +71,9 @@ nav {
   /*background-image: linear-gradient(to right bottom, #23138099, #1e116f99, #190f5f99, #150c4f99, #11094099);*/
   background-color: #0e5080e6;
   z-index: 2;
+  /* For blur */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 li {

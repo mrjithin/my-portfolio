@@ -33,10 +33,10 @@
   }
 
   .cross #line1 {
-    transform: translateY(6vmin) rotate(135deg);
+    transform: translateY(32.5px) rotate(135deg);
   }
 
   .cross #line3 {
-    transform: translateY(-6vmin) rotate(-135deg);
+    transform: translateY(-32.5px) rotate(-135deg);
   }
 }

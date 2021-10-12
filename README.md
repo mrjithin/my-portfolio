@@ -15,11 +15,15 @@ This website is written purely with HTML, vanilla CSS and vanilla JavaScript. I 
 <hr />
 
 ## ⚠️ Copying and Forking
-Everyone is free to fork this repo, *but* if you use any part of the code in your projects, please don't forget to give me credit by linking to my portfolio at https://mrjithin.netlify.app/. My logo shouldn't be copied without permission.
+Everyone is free to fork this repo, *but* if you use any part of the code in your projects, please don't forget to give me credit by linking to my portfolio at https://mrjithin.netlify.app/. My logo shouldn't be copied without permission. Please do read the license given below before using any part of my website:
+<hr />
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://mrjithin.netlify.app/" property="cc:attributionName" rel="cc:attributionURL">Jithin J Joshi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 <hr />
 
 ## Contributions 
 All contributions are welcome *but* I will only merge it if I find it fitting to my taste. 
 <hr>
-
+ 
 ## 🔴 Currently WORK IN PROGRESS;

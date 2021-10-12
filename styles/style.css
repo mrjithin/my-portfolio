@@ -67,7 +67,7 @@ nav {
   display: flex;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(to right bottom, #23138050, #1e116f50, #190f5f50, #150c4f50, #11094050);
+  background-image: linear-gradient(to right bottom, #23138099, #1e116f99, #190f5f99, #150c4f99, #11094099);
   z-index: 2;
 }
 

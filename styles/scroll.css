@@ -8,7 +8,7 @@
 }
 
 .arrows path {
-  stroke: #2994D1;
+  stroke: #165980;
   fill: transparent;
   stroke-width: 1px;  
   animation: arrow 2s infinite;
@@ -31,17 +31,17 @@
 
 .arrows path.a1 {
   animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  -webkit-animation-delay:-1s; /* Safari and Chrome */
 }
 
 .arrows path.a2 {
   animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  -webkit-animation-delay:-0.5s; /* Safari and Chrome */
 }
 
 .arrows path.a3 { 
   animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  -webkit-animation-delay:0s; /* Safari and Chrome */
 }
 
 

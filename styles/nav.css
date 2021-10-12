@@ -1,12 +1,4 @@
 @media (max-width: 820px) {
-  /*#ham-cont {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    top: 0;
-    right: 20px;
-  }*/
-
   .ham {
     position: fixed;
     right: 20px;

@@ -17,4 +17,4 @@ async function main(file) {
 }
 main('style');
 main('nav');
-main('chrome');
+//main('chrome');

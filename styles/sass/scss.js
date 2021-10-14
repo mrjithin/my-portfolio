@@ -1,6 +1,6 @@
-const sass = require("./sass");
-import { promisify } from "util";
-import { writeFile } from "fs";
+const sass = require("sass");
+const promisify = require("util").promisify;
+const writeFile = require("fs").writeFile;
 const sassRenderPromise = promisify(sass.render);
 const writeFilePromise = promisify(writeFile);
 

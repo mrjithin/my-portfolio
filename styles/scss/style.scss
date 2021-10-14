@@ -45,19 +45,6 @@ h1 {
   align-self: center;
 }
 
-nav ul {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  height: 1.5em;
-  align-self: center;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1em 0;
-  font-size: 150%;
-  flex: 1;
-}
-
 a {
   &[href^="#"] {
     text-decoration: none;
@@ -67,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-/* For centering the h1 and top-aligning the nav*/
+// For centering the h1 and top-aligning the nav
 
 nav {
   position: fixed;
@@ -76,8 +63,21 @@ nav {
   width: 100%;
   background-color: rgba($background, 0.74);
   z-index: 2;
-  /* For blur */
+  // For blur 
   backdrop-filter: blur(5px);
+
+  ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    height: 1.5em;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    font-size: 150%;
+    flex: 1;
+  }
 }
 
 li {
@@ -95,19 +95,17 @@ li {
 #hi {
   transform: scale(0.8);
 
-  /*Inline elements doesn't transform*/
+  // Inline elements doesn't transform
   display: block;
 
-  /* To scale down from the bottom-left so that it doesn't move away */
+  // To scale down from the bottom-left so that it doesn't move away 
   transform-origin: left bottom;
   color: #97a6a3;
 }
 
 #passion {
-  /*transform: scale(0.6);*/
   display: block;
-
-  /* To scale down from the bottom-left so that it doesn't move away */
+  // To scale down from the bottom-left so that it doesn't move away 
   transform-origin: left top;
   color: #d7ffd1;
 }
@@ -126,7 +124,7 @@ li {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: $Gloria;
 }
 
 h2 {
@@ -137,11 +135,11 @@ h2 {
 
 section {
   margin: 5vmax 10vmin;
-  color: var(--text);
+  color: $text;
 }
 
 hr {
-  background-color: var(--text);
+  background-color: $text;
 }
 
 p {

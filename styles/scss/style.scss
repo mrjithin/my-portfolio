@@ -1,0 +1,164 @@
+/* Fonts
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Gluten', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Gemunu Libre', sans-serif;
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+:root {
+  --background-main:#15263d;
+  --icon-color:#056dff;
+
+  /*background-image: linear-gradient(to right bottom, #231380, #1e116f, #190f5f, #150c4f, #110940);*/
+  background-color: #0e5080;
+  --text:#c1c3c9;
+}
+
+body {
+  margin: 0;
+
+  /*background-image: linear-gradient(to right bottom, #15263d, #20405b, #2a5c79, #337a97, #3e99b3);*/
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+header {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Gluten', cursive;
+  color: #d0d9d7;
+  font-size: 10vmin;
+  padding-left: 0.5em;
+  padding-right: 0.12em;
+  align-self: center;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  height: 1.5em;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+  font-size: 150%;
+
+  /*border-bottom: 0.2em solid var(--icon-color);*/
+  flex: 1;
+}
+
+a {
+  &[href^="#"] {
+    text-decoration: none;
+    color: #2ec4b6;
+  }
+
+  text-decoration: none;
+}
+
+/* For centering the h1 and top-aligning the nav*/
+
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+
+  /*background-image: linear-gradient(to right bottom, #23138099, #1e116f99, #190f5f99, #150c4f99, #11094099);*/
+  background-color: #0e5080bf;
+  z-index: 2;
+
+  /* For blur */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+li {
+  transition: all 0.3s;
+
+  &:hover, &:active {
+    transform: scale(1.15);
+  }
+}
+
+#name {
+  color: #1df0d7;
+}
+
+#hi {
+  transform: scale(0.8);
+
+  /*Inline elements doesn't transform*/
+  display: block;
+
+  /* To scale down from the bottom-left so that it doesn't move away */
+  transform-origin: left bottom;
+  color: #97a6a3;
+}
+
+#passion {
+  /*transform: scale(0.6);*/
+  display: block;
+
+  /* To scale down from the bottom-left so that it doesn't move away */
+  transform-origin: left top;
+  color: #d7ffd1;
+}
+
+#logo {
+  height: 60px;
+  width: 70px;
+  margin-left: 20px;
+}
+
+#logo-a {
+  display: flex;
+  flex: 0.8;
+  align-items: center;
+  height: 95px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h2 {
+  font-size: 8vmin;
+  color: #97bfb3;
+  margin-bottom: 0;
+}
+
+section {
+  margin: 5vmax 10vmin;
+  color: var(--text);
+}
+
+hr {
+  background-color: var(--text);
+}
+
+p {
+  font-size: 6vmin;
+}
+
+blockquote {
+  color: #8080a6;
+  text-align: right;
+}

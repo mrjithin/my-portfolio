@@ -14,7 +14,7 @@
   }
 
   .line {
-    background-color: $icon-color;
+    background-color: variables.$icon-color;
     width: 100%;
     height: 8px;
     border-radius: 15px;

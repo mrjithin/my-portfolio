@@ -1,3 +1,5 @@
+@use 'variables';
+
 .arrows {
   width: 60px;
   height: 72px;
@@ -7,7 +9,7 @@
   bottom: 10px;
  
   path {
-    stroke: #4abdff;
+    stroke: variables.$icon-color;
     fill: transparent;
     stroke-width: 1px;  
     animation: arrow 2s infinite;

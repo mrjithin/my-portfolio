@@ -4,6 +4,7 @@ const fs = require("fs");
 const writeFile = fs.writeFile;
 const sassRenderPromise = promisify(sass.render);
 const writeFilePromise = promisify(writeFile);
+// Creates a directory 'css'. 
 fs.mkdir(__dirname + '/../css',{ recursive: true }, (err) => {
   if(err) throw err;
 })

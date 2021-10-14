@@ -1,4 +1,4 @@
-import sass from "sass";
+const sass = require("./sass");
 import { promisify } from "util";
 import { writeFile } from "fs";
 const sassRenderPromise = promisify(sass.render);

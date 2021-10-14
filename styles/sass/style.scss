@@ -142,4 +142,8 @@ p {
 blockquote {
   color: lighten(#8080a6, 5%);
   text-align: right;
+  font-size: 5vmin;
+  footer {
+    font-size: 4vmin;
+  }
 }

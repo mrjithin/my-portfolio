@@ -1,7 +1,7 @@
 module.exports = {
   onPreBuild: async ({ utils: { run } }) => {
     await run.command(
-      "sass styles/scss:styles/css"
+      "npm install && node ./styles/scss/scss.js"
     );
   },
 };

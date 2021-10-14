@@ -15,6 +15,21 @@
   }
 }
 
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; 
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {
+  animation-delay:0s;
+  -webkit-animation-delay:0s; 
+}
+
 @keyframes arrow {
   0% {opacity:0}
   40% {opacity:1}
@@ -29,17 +44,3 @@
   100% {opacity:0}
 }
 
-.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari and Chrome */
-}
-   
-.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari and Chrome */
-}
-    
-.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari and Chrome */
-}

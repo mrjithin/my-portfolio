@@ -7,7 +7,7 @@
     "build": "npm install && node ./styles/sass/scss.js"
   },
   "devDependencies": {
-    "sass": "^1.43.2"
+    "sass": "^1.42.0"
   },
   "repository": {
     "type": "git",

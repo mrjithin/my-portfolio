@@ -1,9 +1,12 @@
 const sass = require("sass");
 const promisify = require("util").promisify;
-const writeFile = require("fs").writeFile;
+const fs = require("fs");
+const writeFile = fs.writeFile;
 const sassRenderPromise = promisify(sass.render);
 const writeFilePromise = promisify(writeFile);
-
+fs.mkdir(__dirname + '/../css',{ recursive: true }, (err) => {
+  if(err) throw err;
+})
 async function main(file) {
   const styleResult = await sassRenderPromise({
     file: `./styles/sass/${file}.scss`,

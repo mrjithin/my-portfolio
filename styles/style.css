@@ -19,7 +19,7 @@ html {
   --icon-color: #056dff;
   /*background-image: linear-gradient(to right bottom, #231380, #1e116f, #190f5f, #150c4f, #110940);*/
   background-color: #0e5080;
-  --text: #a9b1cc;
+  --text: #c1c3c9;
 }
 
 body {
@@ -147,5 +147,6 @@ p {
 }
 
 blockquote {
+  color: #a9b1cc;
   text-align: right;
 }

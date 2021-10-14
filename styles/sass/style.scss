@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'scroll';
+@use 'sass:color';
 
 html {
   box-sizing: border-box;
@@ -132,7 +133,7 @@ section {
 }
 
 hr {
-  background-color: variables.$text;
+  background-color: color.lighten(variables.$text, -20%);
 }
 
 p {
@@ -140,6 +141,6 @@ p {
 }
 
 blockquote {
-  color: #8080a6;
+  color: color.lighten(#8080a6, 30%);
   text-align: right;
 }

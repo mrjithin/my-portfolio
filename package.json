@@ -4,7 +4,7 @@
   "description": "My Portfolio Website.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sbuild": "npm install && node ./styles/scss/scss.js"
+    "sbuild": "npm install && node ./styles/sass/scss.js"
   },
   "devDependencies": {
     "sass": "^1.43.2"

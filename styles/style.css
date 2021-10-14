@@ -145,3 +145,7 @@ hr {
 p {
   font-size: 6vmin;
 }
+
+blockquote {
+  text-align: right;
+}

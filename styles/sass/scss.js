@@ -6,7 +6,7 @@ const writeFilePromise = promisify(writeFile);
 
 async function main(file) {
   const styleResult = await sassRenderPromise({
-    file: `${process.cwd()}/${file}.scss`,
+    file: `./${file}.scss`,
     outFile: `../css/{file}.css`,
     sourceMap: true,
     sourceMapContents: true,

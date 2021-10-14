@@ -1,0 +1,145 @@
+@use 'variables';
+@use 'scroll';
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+:root {
+  background-color: variables.$background;
+}
+
+body {
+  margin: 0;
+  font-family: variables.$Gemunu;
+}
+
+header {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-family: variables.$Gluten;
+  color: #d0d9d7;
+  font-size: 10vmin;
+  padding-left: 0.5em;
+  padding-right: 0.12em;
+  align-self: center;
+}
+
+a {
+  &[href^="#"] {
+    text-decoration: none;
+    color: #2ec4b6;
+  }
+
+  text-decoration: none;
+}
+
+// For centering the h1 and top-aligning the nav
+
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: rgba(variables.$background, 0.74);
+  z-index: 2;
+  // For blur 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    height: 1.5em;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    font-size: 150%;
+    flex: 1;
+  }
+}
+
+li {
+  transition: all 0.3s;
+
+  &:hover, &:active {
+    transform: scale(1.15);
+  }
+}
+
+#name {
+  color: #1df0d7;
+}
+
+#hi {
+  transform: scale(0.8);
+
+  // Inline elements doesn't transform
+  display: block;
+
+  // To scale down from the bottom-left so that it doesn't move away 
+  transform-origin: left bottom;
+  color: #97a6a3;
+}
+
+#passion {
+  display: block;
+  // To scale down from the bottom-left so that it doesn't move away 
+  transform-origin: left top;
+  color: #d7ffd1;
+}
+
+#logo {
+  height: 60px;
+  width: 70px;
+  margin-left: 20px;
+}
+
+#logo-a {
+  display: flex;
+  flex: 0.8;
+  align-items: center;
+  height: 95px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: variables.$Gloria;
+}
+
+h2 {
+  font-size: 8vmin;
+  color: #97bfb3;
+  margin-bottom: 0;
+}
+
+section {
+  margin: 5vmax 10vmin;
+  color: variables.$text;
+}
+
+hr {
+  background-color: variables.$text;
+}
+
+p {
+  font-size: 6vmin;
+}
+
+blockquote {
+  color: #8080a6;
+  text-align: right;
+}

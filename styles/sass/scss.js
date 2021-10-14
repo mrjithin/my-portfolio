@@ -12,8 +12,8 @@ async function main(file) {
     sourceMapContents: true,
     outputStyle: "compressed",
   });
-  await writeFilePromise(`../css/${file}.css`, styleResult.css, "utf8");
-  await writeFilePromise(`../css/${file}.css.map`, styleResult.map, "utf8");
+  await writeFilePromise(`${__dirname}/../css/${file}.css`, styleResult.css, "utf8");
+  await writeFilePromise(`${__dirname}/../css/${file}.css.map`, styleResult.map, "utf8");
 }
 main('style');
 main('nav');

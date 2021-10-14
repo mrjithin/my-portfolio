@@ -133,7 +133,7 @@ section {
 }
 
 hr {
-  background-color: color.lighten(variables.$text, -20%);
+  background-color: lighten(variables.$text); //color.adjust(variables.$text, $lightness:-20%);
 }
 
 p {
@@ -141,6 +141,6 @@ p {
 }
 
 blockquote {
-  color: color.lighten(#8080a6, 30%);
+  color: lighten(#8080a6, 30%);
   text-align: right;
 }

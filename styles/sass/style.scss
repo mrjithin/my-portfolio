@@ -133,7 +133,7 @@ section {
 }
 
 hr {
-  background-color: lighten(variables.$text, -20%); //color.adjust(variables.$text, $lightness:-20%);
+  background-color: darken(variables.$text, -20%); //color.adjust(variables.$text, $lightness:-20%);
 }
 
 p {

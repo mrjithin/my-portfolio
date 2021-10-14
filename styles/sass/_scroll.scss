@@ -9,7 +9,7 @@
   bottom: 10px;
  
   path {
-    stroke: variables.$icon-color;
+    stroke: lighten(variables.$icon-color, 20%);
     fill: transparent;
     stroke-width: 1px;  
     animation: arrow 2s infinite;

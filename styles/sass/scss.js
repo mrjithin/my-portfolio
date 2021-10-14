@@ -7,7 +7,7 @@ const writeFilePromise = promisify(writeFile);
 async function main(file) {
   const styleResult = await sassRenderPromise({
     file: `./styles/sass/${file}.scss`,
-    outFile: `./styles/css/{file}.css`,
+    outFile: `./styles/css/${file}.css`,
     sourceMap: true,
     sourceMapContents: true,
     outputStyle: "compressed",

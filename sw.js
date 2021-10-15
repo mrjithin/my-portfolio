@@ -6,7 +6,6 @@ import {StaleWhileRevalidate} from 'workbox-strategies';
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 1.0;
 const CACHE_NAME = 'offline';
-// Customize this with a different URL if needed.
 const OFFLINE_URL = 'index.html';
 
 self.addEventListener('install', (event) => {

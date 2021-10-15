@@ -7,7 +7,7 @@ import {StaleWhileRevalidate} from 'workbox-strategies';
 const OFFLINE_VERSION = 1.0;
 const CACHE_NAME = 'offline';
 // Customize this with a different URL if needed.
-const OFFLINE_URL = 'offline.html';
+const OFFLINE_URL = 'index.html';
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {

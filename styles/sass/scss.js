@@ -1,11 +1,10 @@
 const sass = require("sass");
-const promisify = require("util").promisify;
-const fs = require("fs");
-const writeFile = fs.writeFile;
+const { promisify } = require("util");
+const { writeFile, mkdir } = require("fs");
 const sassRenderPromise = promisify(sass.render);
 const writeFilePromise = promisify(writeFile);
 // Creates a directory 'css'. 
-fs.mkdir(__dirname + '/../css',{ recursive: true }, (err) => {
+mkdir(__dirname + '/../css',{ recursive: true }, (err) => {
   if(err) throw err;
 })
 async function main(file) {

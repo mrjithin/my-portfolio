@@ -1,5 +1,5 @@
-import {registerRoute} from 'workbox-routing';
-import {StaleWhileRevalidate} from 'workbox-strategies';
+//import {registerRoute} from 'workbox-routing';
+//import {StaleWhileRevalidate} from 'workbox-strategies';
 
 
 // Incrementing OFFLINE_VERSION will kick off the install event and force
@@ -66,8 +66,8 @@ self.addEventListener('fetch', (event) => {
 });
 
   
-registerRoute(
+/*registerRoute(
   ({request}) => request.destination === 'script' ||
                  request.destination === 'style',
   new StaleWhileRevalidate()
-);
+);*/

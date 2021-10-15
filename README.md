@@ -11,7 +11,7 @@ Hosted with [Netlify](https://netlify.com/)
 <hr />
 
 ## Written
-This website is written purely with HTML, vanilla CSS and vanilla JavaScript. I haven't used any frameworks in developing this project. *But* I am planning to migrate this project to [React](https://reactjs.org/). 
+This website is written with HTML, SCSS and vanilla JavaScript. I haven't used any frameworks in developing this project. *But* I am planning to migrate this project to [React](https://reactjs.org/). 
 <hr />
 
 ## ⚠️ Copying and Forking

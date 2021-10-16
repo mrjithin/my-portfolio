@@ -6,10 +6,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install && node ./styles/sass/scss.js"
   },
-  "dependencies": {
-    "workbox-strategies": "^6.3.0",
-    "workbox-routing": "^6.3.0"
-  },
   "devDependencies": {
     "sass": "^1.42.0"
   },

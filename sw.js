@@ -29,7 +29,7 @@ self.addEventListener('activate', event => {
 
   const cacheWhitelist = [cacheID];
 
-  event.waitUntil(async () => {
+  event.waitUntil((async () => {
     await clients.claim();
     caches.keys().then(cacheNames => {
       return Promise.all(
@@ -40,7 +40,7 @@ self.addEventListener('activate', event => {
         })
       );
     })
-  });
+  })());
 });
 
 self.addEventListener('fetch', event => {

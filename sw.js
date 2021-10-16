@@ -11,7 +11,7 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-1';
+let cacheID = 'root-3';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (!cacheWhitelist.includes(cacheName)) {
+          if ((!cacheWhitelist.includes(cacheName)) && cacheName.startsWith('root')) {
             return caches.delete(cacheName);
           }
         })

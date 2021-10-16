@@ -11,12 +11,12 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-const staticCacheName = 'pages-cache-v2';
+let cacheNum = 1;
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
   event.waitUntil(
-    caches.open(staticCacheName)
+    caches.open(cacheNum.toString())
     .then(cache => {
       return cache.addAll(filesToCache);
     })
@@ -26,7 +26,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
 
-  const cacheWhitelist = [staticCacheName];
+  const cacheWhitelist = [cacheNum.toString()];
 
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -56,7 +56,7 @@ self.addEventListener('fetch', event => {
         /*if (response.status === 404) {
           return caches.match('pages/404.html');
         }*/
-        return caches.open(staticCacheName)
+        return caches.open(cacheNum.toString())
         .then(cache => {
           cache.put(event.request.url, response.clone());
           return response;
@@ -69,4 +69,13 @@ self.addEventListener('fetch', event => {
   );
 });
 
-
+self.addEventListener('install', event => {
+  console.log('Attempting to update cache');
+  cacheNum++;
+  event.waitUntil(
+    caches.open(cacheNum.toString())
+    .then(cache => {
+      return cache.addAll(filesToCache);
+    })
+  );
+});

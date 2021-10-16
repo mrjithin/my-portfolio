@@ -29,18 +29,17 @@ self.addEventListener('activate', event => {
 
   const cacheWhitelist = [cacheID];
 
-  event.waitUntil((async () => {
-    await clients.claim();
-    caches.keys().then(cacheNames => {
+  event.waitUntil(
+    clients.claim().then(() => caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if ((!cacheWhitelist.includes(cacheName)) && cacheName.startsWith('root')) {
+          if (!cacheWhitelist.includes(cacheName)) {
             return caches.delete(cacheName);
           }
         })
       );
-    })
-  })());
+    }))
+  );
 });
 
 self.addEventListener('fetch', event => {

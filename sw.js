@@ -11,12 +11,13 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheNum = 1;
+let cacheID = 'root-1';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
-  event.waitUntil(
-    caches.open(cacheNum.toString())
+ self.skipWaiting();
+ event.waitUntil(
+    caches.open(cacheID)
     .then(cache => {
       return cache.addAll(filesToCache);
     })
@@ -26,19 +27,20 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
 
-  const cacheWhitelist = [cacheNum.toString()];
+  const cacheWhitelist = [cacheID];
 
-  event.waitUntil(
+  event.waitUntil(async () => {
+    await clients.claim();
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
+          if (!cacheWhitelist.includes(cacheName)) {
             return caches.delete(cacheName);
           }
         })
       );
     })
-  );
+  });
 });
 
 self.addEventListener('fetch', event => {
@@ -56,7 +58,7 @@ self.addEventListener('fetch', event => {
         /*if (response.status === 404) {
           return caches.match('pages/404.html');
         }*/
-        return caches.open(cacheNum.toString())
+        return caches.open(cacheID)
         .then(cache => {
           cache.put(event.request.url, response.clone());
           return response;
@@ -64,18 +66,7 @@ self.addEventListener('fetch', event => {
       });
     }).catch(error => {
       console.log('Error, ', error);
-      //return caches.match('pages/offline.html');
-    })
-  );
-});
-
-self.addEventListener('install', event => {
-  console.log('Attempting to update cache');
-  cacheNum++;
-  event.waitUntil(
-    caches.open(cacheNum.toString())
-    .then(cache => {
-      return cache.addAll(filesToCache);
+      // return caches.match('pages/offline.html');
     })
   );
 });

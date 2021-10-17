@@ -11,7 +11,7 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-test-3';
+let cacheID = 'root-test-99';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
@@ -20,16 +20,13 @@ self.addEventListener('install', event => {
     .then(cache => {
       return cache.addAll(filesToCache);
     })
-  );
-  self.skipWaiting();
+  ).then(() => self.skipWaiting());
 });
 
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
 
   const cacheWhitelist = [cacheID];
-async function active() {
-  await self.clients.claim();
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
@@ -40,9 +37,7 @@ async function active() {
         })
       );
     });
-  );
- }
- active();
+  ).then(() => self.clients.claim());
 });
 
 self.addEventListener('fetch', event => {

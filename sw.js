@@ -11,26 +11,27 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-test-1';
+let cacheID = 'root-test-2';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
- self.skipWaiting();
  event.waitUntil(
     caches.open(cacheID)
     .then(cache => {
       return cache.addAll(filesToCache);
     })
   );
+  self.skipWaiting();
 });
 
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
 
   const cacheWhitelist = [cacheID];
-
+async function active() {
+  await self.clients.claim();
   event.waitUntil(
-    clients.claim().then(() => caches.keys().then(cacheNames => {
+    caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
           if (!cacheWhitelist.includes(cacheName)) {
@@ -38,8 +39,10 @@ self.addEventListener('activate', event => {
           }
         })
       );
-    }))
+    });
   );
+ }
+ active();
 });
 
 self.addEventListener('fetch', event => {

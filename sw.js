@@ -11,11 +11,11 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-test-7123';
+let cacheID = 'root-test-71';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
- event.waitUntil(
+  event.waitUntil(
     caches.open(cacheID)
     .then(cache => {
       return cache.addAll(filesToCache);
@@ -26,12 +26,12 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   console.log('Activating new service worker...');
 
-  const cacheWhitelist = [cacheID];
+  const cacheList = [cacheID];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (!cacheWhitelist.includes(cacheName)) {
+          if (!cacheList.includes(cacheName)) {
             return caches.delete(cacheName);
           }
         })
@@ -51,16 +51,16 @@ self.addEventListener('fetch', event => {
       }
       console.log('Network request for ', event.request.url);
       return fetch(event.request)
-      .then(response => {
-        /*if (response.status === 404) {
-          return caches.match('pages/404.html');
-        }*/
-        return caches.open(cacheID)
-        .then(cache => {
-          cache.put(event.request.url, response.clone());
-          return response;
+        .then(response => {
+          /*if (response.status === 404) {
+            return caches.match('pages/404.html');
+          }*/
+          return caches.open(cacheID)
+            .then(cache => {
+              cache.put(event.request.url, response.clone());
+              return response;
+            });
         });
-      });
     }).catch(error => {
       console.log('Error, ', error);
       // return caches.match('pages/offline.html');

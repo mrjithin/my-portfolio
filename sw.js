@@ -11,7 +11,7 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-prod-9';
+let cacheID = 'root-prod-10';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
@@ -41,6 +41,10 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+  if (url.origin !== location.origin) {
+    return;
+  }
   console.log('Fetch event for ', event.request.url);
   event.respondWith(
     caches.match(event.request)

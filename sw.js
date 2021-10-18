@@ -11,7 +11,7 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-prod-10';
+let cacheID = 'root-prod-11';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
@@ -41,6 +41,7 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  // CHECKS IF THE REQUEST IS FROM THE SAME ORIGIN AND IF NOT THE FUNCTION RETURNS.
   const url = new URL(event.request.url);
   if (url.origin !== location.origin) {
     return;

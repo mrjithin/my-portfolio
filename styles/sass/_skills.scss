@@ -1,13 +1,15 @@
+@use 'variables';
+
 div {
   &.bar {
     display: flex;
     width: 70%;
     height: 2px;
-    background-color: red;
+    background-color: variables.$background;
   }
   &.inner-bar {
     display: inline-block;
-    background-color: green;
+    background-color: #17fc03;
     width: 75%;
     height: 100%;
   }

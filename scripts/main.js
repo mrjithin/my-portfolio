@@ -21,8 +21,15 @@ const mobileLis = document.querySelectorAll("nav#mobile a");
 
 Array.from(mobileLis).forEach(link => {
   link.addEventListener("click", event => {
+    document.getElementsByClassName("ham")[0].classList.toggle("cross");
+  document.getElementById("line2").classList.toggle("none");
     mobNav.classList.toggle("on");
     mobNav.classList.toggle("off");
+    if(mobNav.className === "on"){
+      deskNav.style.backgroundColor = navColor;
+    } else {
+      deskNav.style.backgroundColor = "";
+    }
     event.stopPropagation();
   })
 })

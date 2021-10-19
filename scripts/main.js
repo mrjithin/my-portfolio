@@ -51,7 +51,7 @@ const skills = document.querySelectorAll(".inner-bar");
 Array.from(skills).forEach(item => {
   item.addEventListener("scroll", event => {
     if(isScrolledIntoView(item)) {
-      item.classList.add("visible");
+      item.classList.add("visited");
     }
   })
 })

@@ -1,5 +1,5 @@
 p.skill {
-  display: inline-block;
+  text-align: center;
 }
 
 div {
@@ -20,6 +20,6 @@ div {
 .skill-cont {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
 }

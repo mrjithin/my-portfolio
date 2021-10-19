@@ -12,6 +12,16 @@ div {
     background-color: #17fc03;
     width: 75%;
     height: 100%;
+    &.js { width: 97%; }
+    &.css { width: 95%; }
+    &.scss { width: 75%; }
+    &.html { width: 100%; }
+    &.ts { width: 50%; }
+    &.njs { width: 80%; }
+    &.git { width: 75%; }
+    &.md { width: 99%; }
+    &.bs { width: 50%; }
+    &.pwa { width: 70%; }
   }
 }
 

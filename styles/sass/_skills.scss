@@ -1,0 +1,24 @@
+p.skill {
+  display: inline-block;
+}
+
+div {
+  &.bar {
+    display: flex;
+    width: 60%;
+    height: 2px;
+    background-color: red;
+  }
+  &.inner-bar {
+    display: inline-block;
+    background-color: green;
+    width: 75%;
+    height: 100%;
+  }
+}
+
+.skill-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

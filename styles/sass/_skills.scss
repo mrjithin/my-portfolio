@@ -1,5 +1,6 @@
 p.skill {
   text-align: center;
+  flex: 1;
 }
 
 div {
@@ -8,6 +9,7 @@ div {
     width: 60%;
     height: 2px;
     background-color: red;
+    flex: 1;
   }
   &.inner-bar {
     display: inline-block;

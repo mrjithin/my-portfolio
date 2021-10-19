@@ -11,7 +11,7 @@ const filesToCache = [
   '/scripts/main.js'
 ];
 
-let cacheID = 'root-test-54';
+let cacheID = 'root-test-58';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');

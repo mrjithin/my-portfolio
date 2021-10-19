@@ -58,7 +58,7 @@ nav.desktop {
   // For blur 
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-
+  transition: 0.5s;
   ul {
     margin: 0;
     list-style: none;

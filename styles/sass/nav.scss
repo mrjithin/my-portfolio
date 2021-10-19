@@ -31,6 +31,8 @@
   }
 
   .cross {
+    background-color: darken(rgba(255, 255, 255, 0), 10%)
+
     #line1 {
       /* (55 - (2 * .line's height)) / 2 */
       transform: translateY(19.5px) rotate(135deg);

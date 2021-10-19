@@ -41,4 +41,21 @@
       transform: translateY(-27.5px) rotate(-135deg);
     }
   }
+  nav {
+    #mobile {
+      position: fixed;
+      transition: 0.5s;
+      background-color: lighten(variables.$background, 10%);
+      width: 100%;
+      height: 100%;
+      z-index: 12;
+    }
+    .off {
+      right: 100%;
+      left: -100%;
+    }
+    .on {
+      left: 0;
+    }
+  }
 }

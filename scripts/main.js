@@ -49,7 +49,7 @@ function isScrolledIntoView(el) {
 const skills = document.querySelectorAll(".inner-bar");
 
 Array.from(skills).forEach(item => {
-  item.addEventListener("scroll", event => {
+  item.parentNode.parentNode.addEventListener("scroll", event => {
     if(isScrolledIntoView(item)) {
       item.classList.add("visited");
     }

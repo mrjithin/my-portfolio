@@ -59,6 +59,7 @@ nav.desktop {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   transition: 0.5s;
+
   ul {
     margin: 0;
     list-style: none;
@@ -70,16 +71,18 @@ nav.desktop {
     padding: 1em 0;
     font-size: 150%;
     flex: 1;
+
+    li {
+      transition: all 0.3s;
+
+      &:hover, &:active {
+        transform: scale(1.15);
+      }
+    }
   }
 }
 
-li {
-  transition: all 0.3s;
 
-  &:hover, &:active {
-    transform: scale(1.15);
-  }
-}
 
 #name {
   color: #1df0d7;

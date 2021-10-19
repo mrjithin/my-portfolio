@@ -52,6 +52,21 @@
     height: calc(100% - 95px);
     z-index: 11;
     top: 95px;
+    display: flex;
+    align-items: center;
+   
+    ul {
+      display: flex;
+      height: 90%;
+      flex-direction: column;
+      justify-content: space-around;
+
+      li {
+        display: block;
+        text-align: center;
+        font-size: 150%;
+      }
+    }
 
     &.off {
       right: 100%;

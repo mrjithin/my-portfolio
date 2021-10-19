@@ -82,7 +82,10 @@ li {
 }
 
 #name {
-  color: #1df0d7;
+  background: rgb(29,240,215);
+  background: -webkit-linear-gradient(90deg, rgba(29,240,215,1) 35%, rgba(21,136,159,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #hi {

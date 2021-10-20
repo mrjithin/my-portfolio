@@ -366,8 +366,7 @@ textarea.input2 + .focus-input2::after {
 }
 
 .alert-validate::after {
-  content: "\f12a";
-  font-family: FontAwesome;
+  content: "!";
   display: block;
   position: absolute;
   color: #c80000;

@@ -4,7 +4,7 @@
 
   /*==================================================================
   [ Focus Contact2 ]*/
-  document.querySelector('.input2').each(function() {
+  document.querySelectorAll('.input2').forEach(function() {
     document.querySelector(this).addEventListener('blur', function() {
       if (document.querySelector(this).value.trim() != "") {
         document.querySelector(this).classList.add('has-val');

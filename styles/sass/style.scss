@@ -169,6 +169,9 @@ body > footer {
   margin: 0;
   background-color: darken(variables.$background, 10%);
   padding: 3vmin;
-  font-size: 4.5vmin;
-  font-family: variables.$Play;
+  
+  p {
+    font-family: variables.$Play;
+    font-size: 4.5vmin;
+  }
 }

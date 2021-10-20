@@ -164,7 +164,7 @@ nav#mobile {
   display: none;
 }
 
-footer {
+body > footer {
   color: variables.$text;
   margin: 0;
   background-color: darken(variables.$background, 10%);

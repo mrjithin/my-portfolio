@@ -163,3 +163,10 @@ blockquote {
 nav#mobile {
   display: none;
 }
+
+footer {
+  color: variables.$text;
+  margin: 0;
+  background-color: darken(variables.$background, 10%);
+  padding: 3vmin;
+}

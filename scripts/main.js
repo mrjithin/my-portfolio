@@ -1,71 +1,60 @@
+// For mobile hamburger
+const mobNav = document.querySelector("nav#mobile");
+const deskNav = document.querySelector("nav.desktop");
+const navColor = window.getComputedStyle(mobNav).getPropertyValue("background-color");
 
-(function ($) {
-    "use strict";
+document.getElementsByClassName("ham")[0].addEventListener("click", (event) => {
+  document.getElementsByClassName("ham")[0].classList.toggle("cross");
+  document.getElementById("line2").classList.toggle("none");
+  mobNav.classList.toggle("on");
+  mobNav.classList.toggle("off");
+  if(mobNav.className === "on"){
+    deskNav.style.backgroundColor = navColor;
+  } else {
+    deskNav.style.backgroundColor = "";
+  }
+  event.stopPropagation();
+});
 
+// To close the navbar on clicking a link. 
+const mobileLis = document.querySelectorAll("nav#mobile a");
 
-    /*==================================================================
-    [ Focus Contact2 ]*/
-    $('.input2').each(function(){
-        $(this).on('blur', function(){
-            if($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            }
-            else {
-                $(this).removeClass('has-val');
-            }
-        })    
-    })
-            
-  
-    
-    /*==================================================================
-    [ Validate ]*/
-    var name = $('.validate-input input[name="name"]');
-    var email = $('.validate-input input[name="email"]');
-    var message = $('.validate-input textarea[name="message"]');
-
-
-    $('.validate-form').on('submit',function(){
-        var check = true;
-
-        if($(name).val().trim() == ''){
-            showValidate(name);
-            check=false;
-        }
-
-
-        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-            showValidate(email);
-            check=false;
-        }
-
-        if($(message).val().trim() == ''){
-            showValidate(message);
-            check=false;
-        }
-
-        return check;
-    });
-
-
-    $('.validate-form .input2').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
-       });
-    });
-
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).addClass('alert-validate');
+Array.from(mobileLis).forEach(link => {
+  link.addEventListener("click", event => {
+    document.getElementsByClassName("ham")[0].classList.toggle("cross");
+  document.getElementById("line2").classList.toggle("none");
+    mobNav.classList.toggle("on");
+    mobNav.classList.toggle("off");
+    if(mobNav.className === "on"){
+      deskNav.style.backgroundColor = navColor;
+    } else {
+      deskNav.style.backgroundColor = "";
     }
+    event.stopPropagation();
+  })
+})
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
+function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
 
-        $(thisAlert).removeClass('alert-validate');
-    }
-    
-    
+    // Only completely visible elements return true:
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
+}
 
-})(jQuery);
+const skills = document.querySelectorAll(".inner-bar");
+
+function scrolled(item, i) {
+  if(isScrolledIntoView(item)) {
+    item.classList.add("visited");
+    clearInterval(skillObj["skill"+i]);
+  }
+}
+const skillObj = {};
+Array.from(skills).forEach((item, i) => {
+  skillObj["skill"+i] = setInterval(scrolled, 300, item , i);
+})

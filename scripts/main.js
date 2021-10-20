@@ -58,3 +58,6 @@ const skillObj = {};
 Array.from(skills).forEach((item, i) => {
   skillObj["skill"+i] = setInterval(scrolled, 300, item , i);
 })
+
+const date = new Date();
+document.getElementById("year").textContent = date.getFullYear();

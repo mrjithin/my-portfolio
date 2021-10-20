@@ -48,10 +48,12 @@ function isScrolledIntoView(el) {
 
 const skills = document.querySelectorAll(".inner-bar");
 
+function scrolled(item) {
+  if(isScrolledIntoView(item)) {
+    item.classList.add("visited");
+  }
+}
+
 Array.from(skills).forEach(item => {
-  item.parentNode.parentNode.addEventListener("scroll", event => {
-    if(isScrolledIntoView(item)) {
-      item.classList.add("visited");
-    }
-  })
+  setInterval(scrolled, 300, item);
 })

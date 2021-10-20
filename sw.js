@@ -8,7 +8,9 @@ const filesToCache = [
   '/images/favicon/favicon.ico',
   '/scripts/swquery.js',
   '/scripts/no-right-click.js',
-  '/scripts/main.js'
+  '/scripts/main.js',
+  '/scripts/jquery-3.2.1.min.js',
+  '/scripts/contact.js/'
 ];
 
 let cacheID = 'root-prod-10';

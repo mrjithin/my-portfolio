@@ -1,69 +1,71 @@
-(function() {
-  "use strict";
+
+(function ($) {
+    "use strict";
 
 
-  /*==================================================================
-  [ Focus Contact2 ]*/
-  document.querySelectorAll('.input2').forEach(function() {
-    document.querySelector(this).addEventListener('blur', function() {
-      if (document.querySelector(this).value.trim() != "") {
-        document.querySelector(this).classList.add('has-val');
-      } else {
-        document.querySelector(this).removeClass('has-val');
-      }
+    /*==================================================================
+    [ Focus Contact2 ]*/
+    $('.input2').each(function(){
+        $(this).on('blur', function(){
+            if($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            }
+            else {
+                $(this).removeClass('has-val');
+            }
+        })    
     })
-  })
+            
+  
+    
+    /*==================================================================
+    [ Validate ]*/
+    var name = $('.validate-input input[name="name"]');
+    var email = $('.validate-input input[name="email"]');
+    var message = $('.validate-input textarea[name="message"]');
 
 
+    $('.validate-form').on('submit',function(){
+        var check = true;
 
-  /*==================================================================
-  [ Validate ]*/
-  var name = document.querySelector('.validate-input input[name="name"]');
-  var email = document.querySelector('.validate-input input[name="email"]');
-  var message = document.querySelector('.validate-input textarea[name="message"]');
-
-
-  document.querySelector('.validate-form').addEventListener('submit', function() {
-    var check = true;
-
-    if (document.querySelector(name).value.trim() == '') {
-      showValidate(name);
-      check = false;
-    }
+        if($(name).val().trim() == ''){
+            showValidate(name);
+            check=false;
+        }
 
 
-    if (document.querySelector(email).value.trim().match(/^([a-zA-Z0-9_-.]+)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(]?)$/) == null) {
-      showValidate(email);
-      check = false;
-    }
+        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+            showValidate(email);
+            check=false;
+        }
 
-    if (document.querySelector(message).value.trim() == '') {
-      showValidate(message);
-      check = false;
-    }
+        if($(message).val().trim() == ''){
+            showValidate(message);
+            check=false;
+        }
 
-    return check;
-  });
-
-
-  document.querySelector('.validate-form .input2').each(function() {
-    document.querySelector(this).focus(function() {
-      hideValidate(this);
+        return check;
     });
-  });
-
-  function showValidate(input) {
-    var thisAlert = document.querySelector(input).parent();
-
-    document.querySelector(thisAlert).classList.add('alert-validate');
-  }
-
-  function hideValidate(input) {
-    var thisAlert = document.querySelector(input).parent();
-
-    document.querySelector(thisAlert).removeClass('alert-validate');
-  }
 
 
+    $('.validate-form .input2').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+       });
+    });
 
-})();
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+    
+    
+
+})(jQuery);

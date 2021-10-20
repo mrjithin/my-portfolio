@@ -10,10 +10,6 @@
 Hosted with [Netlify](https://netlify.com/)
 <hr />
 
-## Written
-This website is written with HTML, SCSS and vanilla JavaScript. I haven't used any frameworks in developing this project. *But* I am planning to migrate this project to [React](https://reactjs.org/). 
-<hr />
-
 ## ⚠️ Copying and Forking
 Everyone is free to fork this repo, **❗⚠️ *but* if you use any part of the code in your projects, please don't forget to give me credit by linking to my portfolio at https://mrjithin.netlify.app/ and also starring this repo ⚠️❗**. My logo shouldn't be copied without permission. Please do read the license given below before using any part of my website:
 <hr />

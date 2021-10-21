@@ -1,7 +1,7 @@
 // For mobile hamburger
 const mobNav = document.querySelector("nav#mobile");
 const deskNav = document.querySelector("nav.desktop");
-const navColor = window.getComputedStyle(mobNav).getPropertyValue("background-color");
+const navColor = () => window.getComputedStyle(mobNav).getPropertyValue("background-color");
 
 document.getElementsByClassName("ham")[0].addEventListener("click", (event) => {
   document.getElementsByClassName("ham")[0].classList.toggle("cross");
@@ -9,7 +9,7 @@ document.getElementsByClassName("ham")[0].addEventListener("click", (event) => {
   mobNav.classList.toggle("on");
   mobNav.classList.toggle("off");
   if(mobNav.className === "on"){
-    deskNav.style.backgroundColor = navColor;
+    deskNav.style.backgroundColor = navColor();
   } else {
     deskNav.style.backgroundColor = "";
   }
@@ -26,7 +26,7 @@ Array.from(mobileLis).forEach(link => {
     mobNav.classList.toggle("on");
     mobNav.classList.toggle("off");
     if(mobNav.className === "on"){
-      deskNav.style.backgroundColor = navColor;
+      deskNav.style.backgroundColor = navColor();
     } else {
       deskNav.style.backgroundColor = "";
     }

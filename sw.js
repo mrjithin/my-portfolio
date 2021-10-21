@@ -65,7 +65,7 @@ self.addEventListener('fetch', event => {
       return fetch(event.request)
         .then(response => {
           if (response.status === 404) {
-            return caches.match('404.html');
+            return caches.match('index.html');
           }
           return caches.open(cacheID)
             .then(cache => {

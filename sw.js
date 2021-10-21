@@ -15,9 +15,10 @@ const filesToCache = [
   '/images/social/github.svg',
   '/images/social/reddit.svg',
   '/images/social/codepen.svg',
+  '404.html'
 ];
 
-let cacheID = 'root-prod-27';
+let cacheID = 'root-prod-28';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
@@ -63,9 +64,9 @@ self.addEventListener('fetch', event => {
       console.log('Network request for ', event.request.url);
       return fetch(event.request)
         .then(response => {
-          /*if (response.status === 404) {
-            return caches.match('pages/404.html');
-          }*/
+          if (response.status === 404) {
+            return caches.match('404.html');
+          }
           return caches.open(cacheID)
             .then(cache => {
               cache.put(event.request.url, response.clone());

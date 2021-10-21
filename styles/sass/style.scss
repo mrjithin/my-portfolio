@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: variables.$Lato;
+  font-family: variables.$Gemunu;
 }
 
 header {
@@ -177,6 +177,7 @@ body > footer {
     text-align: center;
   }
   small {
+    font-family: variables.$Lato;
     font-size: 105%;
     display: block;
     width: 100%;

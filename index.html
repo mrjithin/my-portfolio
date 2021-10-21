@@ -5,15 +5,6 @@
     <!-- Adding crossorigin="anonymous" for safety and for decreasing the cache size cached by the service worker. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Jithin J Joshi, Web Developer Portfolio, Homepage" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TK4XESS66" crossorigin="anonymous"></script>
-    <script crossorigin="anonymous">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'G-7TK4XESS66');
-    </script>
     <meta name="google-site-verification" content="npYtFYyvpWnZFlWpoG0d4zjNeW3ZKkJCQU7aPsOLR9s" />
     <title>Jithin J Joshi - Web Developer | Portfolio</title>
     <link rel="manifest" href="/manifest.webmanifest">
@@ -41,6 +32,8 @@
     <script src="/scripts/contact.js" defer></script>
     <script src="/scripts/ham.js" defer></script>
     <script src="/scripts/scroll.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-7TK4XESS66" crossorigin="anonymous"></script>
     <header>
       <nav class="desktop">
         <a href="#" id="logo-a"><img id="logo" src="/images/logo.svg" alt="J-logo" /></a>
@@ -201,5 +194,12 @@
       <p>This website was completely built on mobile without the help of any code editors, written and designed with ❤️ by Jithin J Joshi.</p>
       <small>&copy; <span id="year"></span>, Jithin J Joshi, All Rights Reserved.</small>
     </footer>
+    <script crossorigin="anonymous">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-7TK4XESS66');
+    </script>
   </body>
 </html>

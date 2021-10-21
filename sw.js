@@ -10,14 +10,14 @@ const filesToCache = [
   '/scripts/ham.js',
   '/scripts/scroll.js',
   '/scripts/no-right-click.js',
-  '/scripts/jquery-3.2.1.min.js',
+  '/scripts/jquery-3.6.0.min.js',
   '/scripts/contact.js/',
   '/images/social/github.svg',
   '/images/social/reddit.svg',
   '/images/social/codepen.svg',
 ];
 
-let cacheID = 'root-prod-23';
+let cacheID = 'root-prod-24';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');

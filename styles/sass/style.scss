@@ -217,4 +217,8 @@ main {
 section#contact {
   @extend main;
   width: 100%;
+  h2, hr {
+    margin-left: 10vmin;
+    margin-right: 10vmin;
+  }
 }

@@ -209,3 +209,12 @@ label {
   position: absolute;
   right: 9999999999999px;
 }
+
+main {
+  margin: 0;
+}
+
+section#contact {
+  @extend main;
+  width: 100%;
+}

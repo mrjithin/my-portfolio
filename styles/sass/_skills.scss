@@ -77,7 +77,7 @@ p.skill {
   }
   
   &.visited {
-    color: $cyan;
+    color: #87ffdb;
   }
 
   &.visited::before,
@@ -87,16 +87,16 @@ p.skill {
   }
 
   &.visited::before {
-    border-top-color: $cyan; // Make borders visible
-    border-right-color: $cyan;
+    border-top-color: #87ffdb; // Make borders visible
+    border-right-color: #87ffdb;
     transition:
       width 0.25s ease-out, // Width expands first
       height 0.25s ease-out 0.25s; // And then height
   }
 
   &:visited::after {
-    border-bottom-color: $cyan; // Make borders visible
-    border-left-color: $cyan;
+    border-bottom-color: #87ffdb; // Make borders visible
+    border-left-color: #87ffdb;
     transition:
       border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
       width 0.25s ease-out 0.5s, // And then exanding width

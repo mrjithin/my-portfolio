@@ -53,32 +53,11 @@ p.skill {
   li {
     padding: 0.5em;
     text-transform: uppercase;
-    transition: all 1s;
-    border: 3px solid #87ffdb;
+    transition: all 1.5s;
+    border: 3px solid #87ffdb00;
     color: black;
     &.visited {
-      border-image: linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
-    ) 1;
-      -webkit-border-image: linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-      hsl(89, 85%, 66%),
-      hsl(134, 85%, 66%),
-      hsl(179, 85%, 66%)
-    ) 1;
+      border-color: #87ffdb;
     }
   }
 }

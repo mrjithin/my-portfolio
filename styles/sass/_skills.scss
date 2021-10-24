@@ -1,6 +1,6 @@
 @use 'variables';
 
-div {
+/*div {
   &.bar {
     display: flex;
     width: 60%;
@@ -37,4 +37,26 @@ div {
 p.skill {
   width: 30%;
   color: #17fc03;
+}*/
+
+.skill {
+  font-size: 6vmin;
+  display: flex;
+  height: 198vmin;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    padding: 0.5em;
+    text-transform: uppercase;
+    transition: all 1.5s;
+    border: 3px solid #87ffdb00;
+    &.visited {
+      border-color: #87ffdb;
+    }
+  }
 }

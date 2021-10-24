@@ -49,6 +49,7 @@ p.skill {
   
   li {
     border: none;
+    transition: border 1s;
     &.visited {
       border: 3px solid #87ffdb;
     }

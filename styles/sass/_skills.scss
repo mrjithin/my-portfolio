@@ -55,7 +55,7 @@ p.skill {
     text-transform: uppercase;
     border-radius: 3px;
     transition: color 0.25s;
-
+    border: 3px solid green;
   &::before,
   &::after {
         // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts

@@ -54,36 +54,55 @@ p.skill {
     padding: 0.5em;
     text-transform: uppercase;
     border-radius: 3px;
+    transition: color 0.25s;
 
-    &::after {
-      position: absolute;
-      content: "";
-      top: calc(-1 * 3px);
-      left: calc(-1 * 3px);
-      z-index: -1;
-      width: calc(100% + 3px * 2);
-      height: calc(100% + 3px * 2);
-      background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
-      );
-      background-size: 300% 300%;
-      background-position: 0 50%;
-      border-radius: calc(2 * 3px);
-      animation: moveGradient 4s alternate infinite;
-    }
+  &::before,
+  &::after {
+        // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  &.visited {
+    color: $cyan;
+  }
+
+  &.visited::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.visited::before {
+    border-top-color: $cyan; // Make borders visible
+    border-right-color: $cyan;
+    transition:
+      width 0.25s ease-out, // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
+  }
+
+  &:visited::after {
+    border-bottom-color: $cyan; // Make borders visible
+    border-left-color: $cyan;
+    transition:
+      border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+      width 0.25s ease-out 0.5s, // And then exanding width
+      height 0.25s ease-out 0.75s; // And finally height
   }
 }
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
   }
 }

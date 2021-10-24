@@ -53,5 +53,10 @@ p.skill {
   li {
     padding: 0.5em;
     text-transform: uppercase;
+    border: 3px solid transparent;
+    transition: border-color 1s;
+    &.visited {
+      border-color: #87ffdb;
+    }
   }
 }

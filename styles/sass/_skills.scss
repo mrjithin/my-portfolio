@@ -53,10 +53,11 @@ p.skill {
   li {
     padding: 0.5em;
     text-transform: uppercase;
-    border: 3px solid rgba(0,0,0,0);
     transition: all 1s;
+    background: none;
+    color: black;
     &.visited {
-      border-color: linear-gradient(
+      background: linear-gradient(
       60deg,
       hsl(224, 85%, 66%),
       hsl(269, 85%, 66%),

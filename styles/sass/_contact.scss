@@ -78,13 +78,6 @@ button:hover {
   cursor: pointer;
 }
 
-.bg-contact2 {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 .container-contact2 {
   width: 100%;
   max-width: 900px;
@@ -97,7 +90,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: darken(variables.$background, 5%)/*rgba(219, 21, 99, 0.8)*/;
   /*background: -webkit-linear-gradient(
     45deg,
     rgba(213, 0, 125, 0.8),

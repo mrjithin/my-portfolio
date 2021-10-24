@@ -46,12 +46,14 @@ p.skill {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  list-style: none;
   
   li {
-    border: none;
-    transition: border 1s;
+    border: 3px solid #87ffdb00;
+    transition: border-color 1s;
+    padding: 1em;
     &.visited {
-      border: 3px solid #87ffdb;
+      border-color: #87ffdb;
     }
   }
 }

@@ -53,7 +53,7 @@ p.skill {
   li {
     padding: 0.5em;
     text-transform: uppercase;
-    border: 3px solid transparent;
+    border: 3px solid rgba(0,0,0,0);
     transition: border-color 1s;
     &.visited {
       border-color: linear-gradient(

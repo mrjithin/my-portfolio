@@ -10,7 +10,7 @@ function isScrolledIntoView(el) {
     return isVisible;
 }
 
-const skills = document.querySelectorAll(".inner-bar");
+const skills = document.querySelectorAll(".skill li");
 
 function scrolled(item, i) {
   if(isScrolledIntoView(item)) {

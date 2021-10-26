@@ -1,6 +1,6 @@
 .shadow-pop-sm {
-	-webkit-animation: shadow-pop-sm 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: shadow-pop-sm 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	-webkit-animation: shadow-pop-sm 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-sm 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 /* Small shadow */
 @-webkit-keyframes shadow-pop-sm {
@@ -35,8 +35,8 @@
 
 /* Big shadow */ 
 .shadow-pop-bi {
-	-webkit-animation: shadow-pop-bi 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: shadow-pop-bi 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	-webkit-animation: shadow-pop-bi 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-bi 0.8s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 @-webkit-keyframes shadow-pop-bi {

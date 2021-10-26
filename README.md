@@ -21,7 +21,7 @@ Everyone is free to fork this repo, **❗⚠️ *but* if you use any part of the
 
 ## Screenshot
 
-![Screenshot](/images/screenshot.jpg/)
+![Screenshot](/images/screenshot.png/)
 
 <hr />
 

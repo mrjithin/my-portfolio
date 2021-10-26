@@ -14,7 +14,8 @@ const skills = document.querySelectorAll(".skill .inner-bar");
 
 function scrolled(item, i) {
   if(isScrolledIntoView(item)) {
-    item.classList.add("visited", "shadow-pop-bl");
+    item.classList.add("visited");
+    item.parentNode.parentNode.classList.add("shadow-pop-bl");
     clearInterval(skillObj["skill"+i]);
   }
 }

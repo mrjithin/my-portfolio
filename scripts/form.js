@@ -43,13 +43,11 @@ function validate() {
     });
 
     function showValidate(input) {
-        const thisAlert = document.querySelector(input).parentNode;
-        thisAlert.classList.add('alert-validate');
+        input.classList.add('alert-validate');
     }
 
     function hideValidate(input) {
-        const thisAlert = document.querySelector(input).parentNode;
-        thisAlert.classList.remove('alert-validate');
+        input.classList.remove('alert-validate');
     }
 }
 validate();

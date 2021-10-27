@@ -43,11 +43,11 @@ function validate() {
     });
 
     function showValidate(input) {
-        input.classList.add('alert-validate');
+        input.parentNode.classList.add('alert-validate');
     }
 
     function hideValidate(input) {
-        input.classList.remove('alert-validate');
+        input.parentNode.classList.remove('alert-validate');
     }
 }
 validate();

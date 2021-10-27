@@ -33,7 +33,7 @@ function validate() {
             showValidate(message);
             check=false;
         }
-        return check;
+        if(!check) event.preventDefault();
     });
 
     Array.from(document.querySelector('.validate-form .input2')).forEach(item => {

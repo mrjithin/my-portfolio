@@ -6,7 +6,7 @@ const filesToCache = [
   'images/logo.svg',
   'index.html',
   '/images/favicon/favicon.ico',
-  '/scripts/swquery.js',
+  '/scripts/register.js',
   '/scripts/ham.js',
   '/scripts/scroll.js',
   '/scripts/jquery-3.6.0.min.js',

@@ -36,7 +36,7 @@ function validate() {
         if(!check) event.preventDefault();
     });
 
-    Array.from(document.querySelector('.validate-form .input2')).forEach(item => {
+    Array.from(document.querySelectorAll('.validate-form .input2')).forEach(item => {
         item.addEventListener("focus", event => {
            hideValidate(item);
        });

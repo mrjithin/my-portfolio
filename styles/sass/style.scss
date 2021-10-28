@@ -14,7 +14,7 @@ html {
   &:before, &:after {
     box-sizing: inherit;
   }
-}
+} 
 
 :root {
   background-color: variables.$background;
@@ -174,12 +174,12 @@ body > footer {
   color: variables.$text;
   margin: 0;
   background-color: darken(variables.$background, 10%);
-  padding: 3vmin;
   
   p {
     font-family: variables.$Play;
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
+    margin: 1em;
   }
   small {
     font-family: variables.$Lato;
@@ -187,6 +187,7 @@ body > footer {
     display: block;
     width: 100%;
     text-align: center;
+    margin: 1em;
   }
 }
 

@@ -40,7 +40,7 @@ p.skill {
 }*/
 
 .skill {
-  font-size: 6vmin;
+  font-size: clamp(calc(150% + 3px), 30px, 6vmin);
   display: flex;
   height: 198vmin;
   flex-direction: column;

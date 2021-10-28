@@ -146,6 +146,11 @@ h2 {
 section {
   margin: 5vmax 10vmin;
   color: variables.$text;
+  &#about {
+    p {
+      line-height: 1.2;
+    }
+  }
 }
 
 hr {
@@ -249,3 +254,4 @@ section#contact {
   width: 100%;
   justify-content: flex-end;
 }
+

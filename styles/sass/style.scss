@@ -166,7 +166,6 @@ blockquote {
   width: 85%;
   text-align: justify;
   text-align-last: right;
-  margin-right: 0;
 
   p {
     font-size: 23px;
@@ -249,7 +248,7 @@ section#contact {
   }
 }
 
-.quot-cont {
+#quot-cont {
   display: flex;
   width: 100%;
   justify-content: flex-end;

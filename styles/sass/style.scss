@@ -138,7 +138,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 8vmin;
+  font-size: clamp(150%, 35px, 8vmin);
   color: #87ffdb;
   margin-bottom: 0;
 }

@@ -153,7 +153,7 @@ hr {
 }
 
 p {
-  font-size: 22px;
+  font-size: clamp(150%, 27px, 6vmin);
 }
 
 blockquote {

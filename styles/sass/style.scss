@@ -153,15 +153,15 @@ hr {
 }
 
 p {
-  font-size: 6vmin;
+  font-size: 22px;
 }
 
 blockquote {
   color: #daffad;
   text-align: right;
-  font-size: 5vmin;
+  font-size: 20px;
   footer {
-    font-size: 4vmin;
+    font-size: 18px;
   }
 }
 
@@ -178,7 +178,7 @@ body > footer {
   
   p {
     font-family: variables.$Play;
-    font-size: 4.5vmin;
+    font-size: 20px;
     text-align: center;
   }
   small {

@@ -19,21 +19,19 @@ function validate() {
 
 
     document.querySelector('.validate-form').addEventListener('submit' ,event => {
-        let check = true;
         if(name.value.trim() == ''){
             showValidate(name);
-            check=false;
+            event.preventDefault();
         }
         if(email.value.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
             showValidate(email);
-            check=false;
+            event.preventDefault();
         }
 
         if(message.value.trim() == ''){
             showValidate(message);
-            check=false;
+            event.preventDefault();
         }
-        if(!check) event.preventDefault();
     });
 
     Array.from(document.querySelectorAll('.validate-form .input2')).forEach(item => {

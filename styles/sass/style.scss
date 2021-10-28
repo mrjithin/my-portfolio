@@ -161,9 +161,12 @@ blockquote {
   width: 85%;
   text-align: justify;
   text-align-last: right;
-  margin-left: 15%;
+  float: right;
 
   p {
+    &::before, &::after {
+      content: "\22";
+    }
     font-size: 23px;
   }
   footer {

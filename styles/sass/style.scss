@@ -177,10 +177,12 @@ body > footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   p {
     font-family: variables.$Play;
     font-size: 18px;
     text-align: justify;
+    text-align-last: center;
     width: 90%;
   }
   small {

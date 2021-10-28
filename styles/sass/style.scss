@@ -158,7 +158,10 @@ p {
 
 blockquote {
   color: #daffad;
-  text-align: right;
+  width: 60%;
+  text-align: justify;
+  text-align-last: right;
+  margin-left: 40%;
 
   p {
     font-size: 23px;

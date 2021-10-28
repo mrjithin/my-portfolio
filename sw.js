@@ -14,7 +14,7 @@ const filesToCache = [
   '/images/social/codepen.svg',
 ];
 
-const cacheID = 'root-prod-46';
+const cacheID = 'root-prod-47';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');

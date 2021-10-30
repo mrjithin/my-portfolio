@@ -65,11 +65,13 @@ div {
   &.inner-bar {
     display: inline-block;
     background-color: #87ffdb;
-    width: 1%;
+    width: 0;
     height: 100%;
     transition: 1.5s;
+    opacity: 0;
     &.visited {
       width: 100%;
+      opacity: 1;
     }
   }
 }

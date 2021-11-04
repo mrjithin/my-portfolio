@@ -1,4 +1,4 @@
-document.querySelector("form button").disabled = "false";
+document.querySelector("form button").disabled = false;
 function validate() {
     "use strict";
     // Focus Contact2

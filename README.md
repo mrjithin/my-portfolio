@@ -2,7 +2,7 @@
   <h1>My Portfolio - Jithin</h1>
   <a href="https://app.netlify.com/sites/mrjithin/deploys"><img src="https://api.netlify.com/api/v1/badges/ca44d892-8c5d-486b-9d8c-3a6c148e1059/deploy-status" alt="Netlify Status" /></a>
 
-  Hosted at <a href="https://mrjithin.netlify.app">mrjithin.netlify.app</a>
+  Hosted at <a href="https://www.mrjithin.me">www.mrjithin.me</a>
 </div>
 <hr />
 
@@ -15,12 +15,12 @@ This website is written with HTML, SCSS and vanilla JavaScript. I haven't used a
 <hr />
 
 ## ⚠️ Copying and Forking
-Everyone is free to fork this repo, **❗⚠️ *but* if you use any part of the code in your projects, please don't forget to give me credit by linking to my portfolio at https://mrjithin.netlify.app/ and also starring this repo ⚠️❗**. My logo shouldn't be copied without permission. Please do read the license given below before using any part of my website:
+Everyone is free to fork this repo, **❗⚠️ *but* if you use any part of the code in your projects, please don't forget to give me credit by linking to my portfolio at https://www.mrjithin.me/ and also starring this repo ⚠️❗**. My logo shouldn't be copied without permission. Please do read the license given below before using any part of my website:
 <hr />
 
 ## Author
 [Jithin J Joshi](https://github.com/mrjithin/)
-- My [Web Developer Portfolio Website](https://mrjithin.netlify.app/)
+- My [Web Developer Portfolio Website](https://www.mrjithin.me/)
 <hr />
 
 ## Screenshot
